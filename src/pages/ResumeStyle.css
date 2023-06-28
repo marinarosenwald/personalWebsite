@@ -1,0 +1,10 @@
+#resumeDisplay{
+    padding-top: 20px;
+}
+
+#pdf {
+    display: block;
+    width: 85%;
+    height: 975px; 
+    margin: auto;
+}

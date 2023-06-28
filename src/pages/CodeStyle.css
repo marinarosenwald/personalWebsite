@@ -1,0 +1,28 @@
+#outsideBox {
+    padding-top: 200px;
+}
+
+.box {
+    display: block;
+    margin: auto;
+    background-color: #FFF;
+    border-radius: 25px;
+    width: 40%;
+    color: #000;
+    border: 5px solid black; 
+}
+
+#disclaimer h1{
+    text-align: center;
+    list-style: none;
+    padding: 8px 8px 0px 8px;
+    position: relative;
+    font-size: 2rem;
+}
+
+#disclaimer p{
+    list-style: none;
+    padding: 8px;
+    position: relative;
+    font-size: 1.3rem;
+}

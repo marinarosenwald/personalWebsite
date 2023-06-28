@@ -1,0 +1,24 @@
+  .box {
+    display: block;
+    margin: auto;
+    background-color: #FFF;
+    border-radius: 25px;
+    width: 40%;
+    color: #000;
+    padding: 10;
+    border: 5px solid black; 
+    }
+
+
+  .profileImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    width: 20%;
+    border: 5px solid #000;
+  }
+
+  #photo {
+    padding-top: 10px;
+  }
