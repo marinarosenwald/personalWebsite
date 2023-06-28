@@ -23,7 +23,7 @@ class Navbar extends Component{
                             <li> <Link to="/resume">Resume</Link></li>
                             <li> <Link to="/code">Code</Link></li>
                             {/* <li> <a href="/workUpdates">Work Updates</a></li> */}
-                            <li> <Link to="/personalBlog">Personal Blog</Link></li>
+                            {/* <li> <Link to="/personalBlog">Personal Blog</Link></li> */}
                         </ul>
                     </div>
 
