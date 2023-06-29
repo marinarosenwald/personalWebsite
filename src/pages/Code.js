@@ -9,7 +9,7 @@ function Box({ children, ...props }) {
 
 function Code() {
     return (
-        <>
+        <div className='Code'>
         <br></br>
         <div id="ousideBox">
             <Box class="box" id="disclaimer"> 
@@ -31,7 +31,7 @@ function Code() {
             </div>
         </Box>
         
-        </>
+        </div>
     )
 }
   

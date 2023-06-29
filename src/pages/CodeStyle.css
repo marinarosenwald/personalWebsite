@@ -30,6 +30,7 @@
 .boxi {
     display: block;
     margin-left: 5%;
+    padding: 1; 
     background-color: rgb(247, 235, 235);
     border-radius: 25px;
     width: 28%;
@@ -40,6 +41,7 @@
 .input {
     display: flex;
     align-items: center;
+    padding: 1; 
   }
 
 .icon {
@@ -49,8 +51,33 @@
 #insideText a{
     margin-left: 20px;
     font-size: 1.3rem;
+    padding: 1; 
 }
 #insideText p {
     margin-left: 10px;
+    padding: 1; 
     font-size: 1.5rem;
+}
+
+@media screen and (max-width:769px){
+    .boxi {
+        display: block;
+        margin-left: 5%;
+        padding: 1; 
+        background-color: rgb(247, 235, 235);
+        border-radius: 25px;
+        width: 70%;
+        color: #000;
+        border: 5px solid black; 
+    }
+
+    .box {
+        display: block;
+        margin: auto;
+        background-color: #FFF;
+        border-radius: 25px;
+        width: 70%;
+        color: #000;
+        border: 5px solid black; 
+    }
 }
