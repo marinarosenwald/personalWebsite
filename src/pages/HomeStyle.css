@@ -22,3 +22,9 @@
   #photo {
     padding-top: 10px;
   }
+
+  @media screen and (max-width:769px){
+    .profileImg {
+      width: 45%;
+    }
+  }
