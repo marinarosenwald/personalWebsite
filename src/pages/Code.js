@@ -9,7 +9,7 @@ function Box({ children, ...props }) {
 
 function Code() {
     return (
-        <div className='Code'>
+        <div id='Code'>
         <br></br>
         <div id="ousideBox">
             <Box class="box" id="disclaimer"> 

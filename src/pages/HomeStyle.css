@@ -1,6 +1,9 @@
-  .box {
+#Home{
+  margin-bottom: 20px; 
+}  
+.box {
     display: block;
-    margin: auto;
+    margin: auto; 
     background-color: #FFF;
     border-radius: 25px;
     width: 50%;
