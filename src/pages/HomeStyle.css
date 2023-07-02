@@ -12,6 +12,10 @@
     border: 5px solid black; 
     }
 
+.center {
+  text-align: center;
+}
+
   #contact h2{
       text-align: center;
       list-style: none;
@@ -19,6 +23,7 @@
       position: relative;
       font-size: 2rem;
   }
+
 
 
   .profileImg {

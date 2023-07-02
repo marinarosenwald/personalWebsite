@@ -31,7 +31,7 @@ function Home() {
 
     <Box class="boxH">
       <div id="contact">
-      <h2 class="center">
+      <h2>
         Contact me
       </h2>
       </div>
