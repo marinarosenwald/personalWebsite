@@ -1,7 +1,7 @@
 #Home{
   margin-bottom: 20px; 
 }  
-.box {
+.boxH {
     display: block;
     margin: auto; 
     background-color: #FFF;
@@ -11,6 +11,14 @@
     padding: 10;
     border: 5px solid black; 
     }
+
+  #contact h2{
+      text-align: center;
+      list-style: none;
+      padding: 8px 8px 8px 8px;
+      position: relative;
+      font-size: 2rem;
+  }
 
 
   .profileImg {
