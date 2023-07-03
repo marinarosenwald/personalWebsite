@@ -4,7 +4,7 @@ import LI from "../photos/linkedin.svg";
 import EI from "../photos/emailIcon.png"; 
 import GI from "../photos/github.svg";
 import "./HomeStyle.css";
-import "./displayBox.css"; 
+import "../components/displayBox.css"; 
 
 function Box({ children, ...props }) {
   return <div {...props}>{children}</div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import "./CodeStyle.css"; 
-import "./displayBox.css"; 
+import "../components/displayBox.css"; 
 import web from "../photos/website-icon.png"; 
 import wordle from "../photos/wordleIcon.png"; 
 
