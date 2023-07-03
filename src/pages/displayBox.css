@@ -35,3 +35,9 @@
     color: #000;
     border: 5px solid black; 
 }
+
+@media screen and (max-width:769px){
+.row{
+    display: block;
+}
+}
