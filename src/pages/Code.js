@@ -26,7 +26,7 @@ function Code() {
                 <Box class="boxList">
                 <a href='https://github.com/marinarosenwald/personalWebsite'>
                     <div class='DinsideBox'>
-                        <img src={ web } class="Dicon"></img>
+                        <img src={ web } alt="webIcon" class="Dicon"></img>
                     <div class="DinsideText">
                     <p>Code for this Website - React, JavaScript, CSS</p>
                     </div>
@@ -39,7 +39,7 @@ function Code() {
                 <Box class="boxList">
                 <a href='https://github.com/marinarosenwald/PythonWordle'>
                     <div class='DinsideBox'>
-                        <img src={ wordle } class="Dicon"></img>
+                        <img src={ wordle } alt="wordleIcon" class="Dicon"></img>
                     <div class="DinsideText">
                     <p>Recreating Wordle - Python</p>
                     </div>

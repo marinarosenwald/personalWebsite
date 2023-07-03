@@ -44,7 +44,7 @@ function Home() {
         <Box class="boxList">
         <a href='https://www.linkedin.com/in/marina-rosenwald/'>
             <div class='DinsideBox'>
-                  <img src={ LI } class="Dicon"></img>
+                  <img src={ LI } alt="LinkedInIcon" class="Dicon"></img>
               <div class="DinsideText">
               <p>LinkedIn</p>
               </div>
@@ -56,7 +56,7 @@ function Home() {
       <div class="column">
         <Box class="boxList">
             <div class='DinsideBox'>
-              <img src={ EI } class="Dicon"></img>
+              <img src={ EI } alt="emailIcon" class="Dicon"></img>
               <div class="DinsideText">
                 <p>marinarosenwald@gmail.com</p>
               </div>
@@ -68,7 +68,7 @@ function Home() {
         <Box class="boxList">
         <a href='https://github.com/marinarosenwald'>
             <div class='DinsideBox'>
-              <img src={ GI } class="Dicon"></img>
+              <img src={ GI } alt="githubIcon" class="Dicon"></img>
               <div class="DinsideText">
                 <p>GitHub</p>
               </div>
