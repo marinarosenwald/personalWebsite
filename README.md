@@ -1,6 +1,6 @@
 # personalWebsite
 
-All code on this website is original (minus some assistance with the css on the navbar)
+All code on this repository is original (minus some assistance with the css on the navbar)
 Please reference me @marinarosenwald if you choose to use this as a framework for your own website. 
 
 This is the React, JavaScript, CSS code for my website https://marinarosenwald.com 
