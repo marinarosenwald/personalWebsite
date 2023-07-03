@@ -353,6 +353,10 @@ function PersonalBlog() {
                 <img src={image.src} alt={image.alt} class="photo" />
             ))}
         </div>
+
+        <p style={{textAlign:"center", fontSize:25}}>Copyright © Marina Rosenwald 2023</p>
+        <p style={{textAlign:"center", fontSize:25}}>Please contact me for use of any photos email: marinarosenwald@gmail.com</p>
+
     </div>
     )
 }
