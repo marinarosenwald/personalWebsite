@@ -1,0 +1,8 @@
+#PersonalBlog {
+    margin: 20px;
+}
+.photo {
+    width: 24%; 
+    border: 5px solid #000;
+    margin: 5px; 
+}
