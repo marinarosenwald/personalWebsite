@@ -40,7 +40,7 @@ import sanFran from "../photos/Travel/sanFran.jpeg";
 import santaBarb from "../photos/Travel/santaBarb.jpeg";
 import slo from "../photos/Travel/slo.jpeg";
 import slo1 from "../photos/Travel/slo1.jpeg";
-import slo2 from "../photos/Travel/slo2.JPG";
+import slo2 from "../photos/Travel/slo2.jpg";
 import slo3 from "../photos/Travel/slo3.jpeg";
 import slo4 from "../photos/Travel/slo4.jpeg";
 import slo5 from "../photos/Travel/slo5.jpeg";
