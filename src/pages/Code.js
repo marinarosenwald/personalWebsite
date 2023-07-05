@@ -3,11 +3,47 @@ import "./CodeStyle.css";
 import "../components/displayBox.css"; 
 import web from "../photos/website-icon.png"; 
 import wordle from "../photos/wordleIcon.png"; 
+import python from "../photos/python.png"; 
 
 function Box({ children, ...props }) {
     return <div {...props}>{children}</div>
   }
   
+const codeList = [
+    {
+        link: 'https://github.com/marinarosenwald/personalWebsite', 
+        src: web,
+        alt: "webIcon", 
+        text: "Code for this Website - React, JavaScript, CSS", 
+    }, 
+    {
+        link: 'https://github.com/marinarosenwald/PythonWordle', 
+        src: wordle,
+        alt: "wordleIcon", 
+        text: "Recreating Wordle - Python", 
+    }, 
+    {
+        link: 'https://github.com/marinarosenwald/interviewPrep', 
+        src: python,
+        alt: "pythonIcon", 
+        text: "Practice interview questions - Python", 
+    }, 
+]
+
+{codeList.map((code) => (
+    <div class="column">
+        <Box class="boxList">
+            <a href={ code.link }>
+                    <div class='DinsideBox'>
+                        <img src={ code.src } alt={ code.alt } class="Dicon"></img>
+                    <div class="DinsideText">
+                    <p>{ code.text }</p>
+                    </div>
+                    </div>
+                    </a>
+                </Box>
+            </div>
+))}
 
 function Code() {
     return (
@@ -22,31 +58,21 @@ function Code() {
         <br></br>
 
         <div class="row">
-            <div class="column">
-                <Box class="boxList">
-                <a href='https://github.com/marinarosenwald/personalWebsite'>
-                    <div class='DinsideBox'>
-                        <img src={ web } alt="webIcon" class="Dicon"></img>
-                    <div class="DinsideText">
-                    <p>Code for this Website - React, JavaScript, CSS</p>
-                    </div>
-                    </div>
-                    </a>
-                </Box>
-            </div>
+            {codeList.map((code) => (
+                <div class="column">
+                    <Box class="boxList">
+                        <a href={ code.link }>
+                                <div class='DinsideBox'>
+                                    <img src={ code.src } alt={ code.alt } class="Dicon"></img>
+                                <div class="DinsideText">
+                                <p>{ code.text }</p>
+                                </div>
+                                </div>
+                                </a>
+                            </Box>
+                        </div>
+            ))}
 
-            <div class="column">
-                <Box class="boxList">
-                <a href='https://github.com/marinarosenwald/PythonWordle'>
-                    <div class='DinsideBox'>
-                        <img src={ wordle } alt="wordleIcon" class="Dicon"></img>
-                    <div class="DinsideText">
-                    <p>Recreating Wordle - Python</p>
-                    </div>
-                    </div>
-                    </a>
-                </Box>
-            </div>
         </div>
         
         </div>
