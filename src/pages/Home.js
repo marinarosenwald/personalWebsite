@@ -46,7 +46,7 @@ function Home() {
             <div class='DinsideBox'>
                   <img src={ LI } alt="LinkedInIcon" class="Dicon"></img>
               <div class="DinsideText">
-              <p>LinkedIn</p>
+              <p>LinkedIn (Private)</p>
               </div>
             </div>
             </a>
