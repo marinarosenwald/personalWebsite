@@ -16,7 +16,7 @@ const codeList = [
     link: 'https://github.com/marinarosenwald/CSS581MachineLearningHomework', 
     src: ml,
     alt: "MLIcon", 
-    text: "4 large scale ML homework assignments - private", 
+    text: "4 large scale ML homework assignments", 
   }, 
   {
     link: 'https://github.com/marinarosenwald/personalWebsite', 
@@ -31,17 +31,31 @@ const codeList = [
     text: "snowman game (main focus: 3D graphics)", 
   }, 
   {
+    link: 'https://github.com/marinarosenwald/CSS583_KMS_Project', 
+    src: python,
+    alt: "pythonIcon", 
+    text: "Custom dictionary web-application with microservices and LLM integration", 
+  }, 
+  {
+    link: 'https://github.com/marinarosenwald/CSS583_KMS_LLMs', 
+    src: python,
+    alt: "pythonIcon", 
+    text: "LLM implementation and prompt engineering", 
+  }, 
+  {
     link: 'https://github.com/marinarosenwald/PythonWordle', 
     src: wordle,
     alt: "wordleIcon", 
     text: "Recreating Wordle - Python", 
   }, 
-  {
-    link: 'https://github.com/marinarosenwald/interviewPrep', 
-    src: python,
-    alt: "pythonIcon", 
-    text: "Practice interview questions - Python", 
-  }, 
+//   {
+//     link: 'https://github.com/marinarosenwald/interviewPrep', 
+//     src: python,
+//     alt: "pythonIcon", 
+//     text: "Practice interview questions - Python", 
+//   }, 
+  
+
 ];
 
 function Code() {
