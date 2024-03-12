@@ -22,7 +22,16 @@ function Home() {
       <h2 class="center" style={{margin: 5, fontSize: 30, }}>Marina Rosenwald</h2>
       <p style={{margin: 8, fontSize: 20, }}>
 
-      Welcome to my website, and thank you for visiting. I extend my sincerest appreciation for your time and interest. My name is Marina Rosenwald, and I am a highly motivated professional with a recent Bachelor of Science degree in Computer Science from California Polytechnic State University - San Luis Obispo. Having successfully completed my internship and fulfilled my university commitments, I embarked on a transformative journey of travel for the past couple of months. Now that I have returned, I am eagerly prepared to embrace new and exciting opportunities in the professional realm. 
+      Hello, I'm Marina Rosenwald. I am currently pursuing a Master's degree at the University of Washington, focusing on Artificial Intelligence and Machine Learning. Concurrently, I am gaining hands-on experience as a Development/GIS/Data Science Systems, Data and Technology Intern, delving into the practical applications and nuances of Computer Vision.
+      <br></br>
+      <br></br>
+      My academic journey is driven by an insatiable curiosity for technology and its potential to solve multifaceted problems. I am dedicated to leveraging my skills in AI/ML to tackle real-world challenges and contribute meaningfully to the technological landscape.
+      <br></br>
+      <br></br>
+      Outside of academia and work, I find myself exploring the many trails the Pacific Northwest has to offer, snowboarding, volunteering with nonprofits aiming to make the outdoors more accessible for those with disabilities, and experimenting in the kitchen. 
+      <br></br>
+      <br></br>
+      I am excited about the possibilities technology offers and eager to contribute to the future of Artificial Intelligence. 
       
       </p>
     </Box>
@@ -46,7 +55,7 @@ function Home() {
             <div class='DinsideBox'>
                   <img src={ LI } alt="LinkedInIcon" class="Dicon"></img>
               <div class="DinsideText">
-              <p>LinkedIn (Private)</p>
+              <p>LinkedIn</p>
               </div>
             </div>
             </a>

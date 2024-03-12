@@ -20,7 +20,7 @@ import Resume from "./pages/Resume";
         <Navbar />
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/resume' element={<Resume/>} />
+          {/* <Route path='/resume' element={<Resume/>} /> */}
           <Route path='/code' element={<Code/>} />
           <Route path='/workUpdates' element={<WorkUpdates/>} />
           <Route path='/personalBlog' element={<PersonalBlog/>} />

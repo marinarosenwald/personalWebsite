@@ -344,7 +344,7 @@ function PersonalBlog() {
         <div id="PersonalBlog">
         <Box class="box" id="disclaimer"> 
             <h1>Personal Blog</h1>
-            <p>Below are some photo highlights of my trips since March of this year</p> 
+            <p>Below are some photo highlights of my trips since March of 2023</p> 
             <p>Places include: Spain, Italy, Menorca, San Francisco, Santa Barbra, SLO, Los Angeles, Lake Alice, Snoqualmie Pass, Spokane, Red Buffs, Newport OR</p>
         </Box>
         <br></br>

@@ -6,7 +6,23 @@
     padding-top: 200px;
 }
 
-@media screen and (max-width:769px){
+.box {
+    border: 3px solid #000000; 
+    background-color: #FFF;
+}
+
+.boxList {
+    width: 100%; 
+    margin: 10px; 
+    background-color: #FFF;
+    border: 3px solid #000000;  
+}
+
+@media screen and (max-width: 769px) {
+    .boxList {
+        width: 70%; 
+    }
+
     .box {
         display: block;
         margin: auto;
