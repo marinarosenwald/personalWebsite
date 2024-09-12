@@ -19,7 +19,7 @@ function Home() {
     </div>
     <br></br>
     <Box class="boxH">
-      <h2 class="center" style={{margin: 5, fontSize: 30, }}>Marina Rosenwald</h2>
+    <h2 className="center" style={{ margin: 5, fontSize: 30, }}>Marina Rosenwald</h2>
       <p style={{margin: 8, fontSize: 20, }}>
 
       Hello, I'm Marina Rosenwald. I am currently pursuing a Master's degree at the University of Washington, focusing on Artificial Intelligence and Machine Learning. Concurrently, I am gaining hands-on experience as a Development/GIS/Data Science Systems, Data and Technology Intern, delving into the practical applications and nuances of Computer Vision.

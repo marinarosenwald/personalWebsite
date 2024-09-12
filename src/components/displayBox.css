@@ -12,7 +12,7 @@
 .box {
     display: block;
     margin: auto;
-    background-color: #FFF;
+    background-color: rgb(230, 230, 230);
     border-radius: 25px;
     width: 50%;
     color: #000;
@@ -54,7 +54,7 @@
 .boxList {
     display: block;
     padding: 10px; 
-    background-color: rgb(247, 235, 235);
+    background-color: rgb(230, 0, 0);
     border-radius: 25px;
     width: 100%;
     color: #000;

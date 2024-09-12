@@ -8,13 +8,13 @@
 
 .box {
     border: 3px solid #000000; 
-    background-color: #FFF;
+    background-color: rgb(230, 230, 230);
 }
 
 .boxList {
     width: 100%; 
     margin: 10px; 
-    background-color: #FFF;
+    background-color: rgb(230, 230, 230);
     border: 3px solid #000000;  
 }
 
@@ -26,7 +26,7 @@
     .box {
         display: block;
         margin: auto;
-        background-color: #FFF;
+        background-color: rgb(230, 230, 230);
         border-radius: 25px;
         width: 70%;
         color: #000;
