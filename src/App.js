@@ -9,7 +9,6 @@ import Home from "./pages/Home";
 import Code from "./pages/Code"; 
 import PersonalBlog from "./pages/PersonalBlog"; 
 import WorkUpdates from "./pages/WorkUpdates";
-import Resume from "./pages/Resume";
 
 
 

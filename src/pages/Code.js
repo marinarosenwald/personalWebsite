@@ -73,7 +73,7 @@ function Code() {
       <br></br>
       <div id="ousideBox">
         <Box class="box" id="disclaimer"> 
-          <h1>Code</h1>
+          <h1 style={{color: 'rgb(194, 125, 15)',}}>Code</h1>
           <p>Please note that some repos may be private. Contact me @marinarosenwald@gmail.com for access.</p> 
         </Box>
       </div>
@@ -88,7 +88,7 @@ function Code() {
                   <div class='DinsideBox'>
                     <img src={code.src} alt={code.alt} class="Dicon"></img>
                     <div class="DinsideText">
-                      <p>{code.text}</p>
+                      <p style={{color: 'rgb(194, 125, 15)', }}>{code.text}</p>
                     </div>
                   </div>
                 </a>
