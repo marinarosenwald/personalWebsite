@@ -1,67 +1,63 @@
 .row {
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 5%;  
+    margin-right: 5%; 
 }
 
 .column {
-    flex: 33.33%;
-    padding: 5px; 
+    flex: 1;  
+    max-width: 30%;  
+    padding: 10px;  
+    box-sizing: border-box; 
 }
 
-.box {
-    display: block;
-    margin: auto;
-    background-color: rgb(230, 230, 230);
+.boxList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(230, 0, 0);
     border-radius: 25px;
-    width: 50%;
+    flex: 1;
+    max-width: 100%; 
     color: #000;
-    border: 5px solid black; 
-}
-
-#disclaimer h1{
-    text-align: center;
-    list-style: none;
-    padding: 8px 8px 0px 8px;
-    position: relative;
-    font-size: 2rem;
-}
-
-#disclaimer p{
-    list-style: none;
-    padding: 8px;
-    position: relative;
-    font-size: 1.3rem;
+    border: 5px solid black;
+    box-sizing: border-box;
 }
 
 .DinsideBox {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .Dicon {
-    height: 50px; 
-    width: 50px;
+    height: 60px;
+    width: 60px;
+    padding: 10px;
 }
 
-.DinsideText{
+.DinsideText {
     font-size: 1.4rem;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
-.boxList {
-    display: block;
-    padding: 10px; 
-    background-color: rgb(230, 0, 0);
-    border-radius: 25px;
-    width: 100%;
-    color: #000;
-    border: 5px solid black; 
-}
+@media screen and (max-width: 769px) {
+    .row {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-@media screen and (max-width:769px){
-.row{
-    display: block;
-}
+    .column {
+        max-width: 100%; 
+        padding: 10px 0;
+    }
+
+    .boxList {
+        max-width: 100%;
+    }
 }
