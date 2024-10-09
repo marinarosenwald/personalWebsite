@@ -7,6 +7,7 @@ import python from "../photos/python.png";
 import snowman from "../photos/snowman.png";
 import ml from "../photos/ML.png";
 import INL from "../photos/INL_Logo.png"
+import swiftIcon from "../photos/swiftIcon.png"
 
 function Box({ children, ...props }) {
   return <div {...props}>{children}</div>
@@ -18,51 +19,58 @@ const codeList = [
     src: INL,
     alt: "Lab",
     text: "Intelligent Networks Laboratory GitHub",
-    context: "This is the GitHub page for the Intelligent Networks Laboratory. Here you can see the Simulator \"Graphitti\" and relavant pages assiciated with it's development. \nNote: I upkeep the lab's website which is a private repo on this page and much of my research-related code will not be publicly available until my thesis is published."
+    context: "This is the GitHub repository for the Intelligent Networks Laboratory at the University of Washington. It includes the development of the 'Graphitti' simulator, along with related resources. Please note that I manage the lab's website, which is hosted as a private repository. Much of the research code, including certain ongoing projects, will remain private until the publication of my thesis."
   },
   {
     link: 'https://github.com/marinarosenwald/CSS581MachineLearningHomework',
     src: ml,
     alt: "MLIcon",
-    text: "4 large scale ML homework assignments",
-    context: "In these projects you will see the application of linear modeling, Naïve Bayes, logistic regression, random forest, AdaBoost, gradient boost, decision trees, and various clustering algorithms. These assignments also include the data cleaning steps and a clear written examples of my thought process throughout the assignments."
+    text: "Large-Scale Machine Learning Homework Assignments",
+    context: "This repository showcases my work on several large-scale machine learning assignments. It includes applications of linear models, Naïve Bayes, logistic regression, random forests, AdaBoost, gradient boosting, decision trees, and clustering algorithms. Additionally, each project includes data cleaning procedures and clear documentation of my thought process throughout the assignments."
   },
   {
     link: 'https://github.com/marinarosenwald/CSS583_KMS_Project',
     src: python,
     alt: "pythonIcon",
-    text: "Custom dictionary web-application with microservices and LLM integration",
-    context: `This project was created as a group final project for CSS583 - Knowledge management Systems. The goal of this project was to create a website that implemented both a MongoDB database search and a Llama LLM to give the user a definition on organization-specific language. Find our final paper about this project <a href="https://github.com/marinarosenwald/CSS583_KMS_Project/blob/main/CSS%20583_TeamFinalWriteup.pdf" style="color: rgb(194, 125, 15);">here.</a>`
-  },  
+    text: "Custom Dictionary Web Application with Microservices and LLM Integration",
+    context: "This project was developed as part of a team for the CSS583 - Knowledge Management Systems course. The aim was to build a web application that integrates a MongoDB database search and a Llama Large Language Model (LLM) to provide organization-specific definitions. You can access the final project paper <a href='https://github.com/marinarosenwald/CSS583_KMS_Project/blob/main/CSS%20583_TeamFinalWriteup.pdf' style='color: rgb(194, 125, 15);'>here</a>."
+  },
   {
     link: 'https://github.com/marinarosenwald/CSS583_KMS_LLMs',
     src: python,
     alt: "pythonIcon",
-    text: "LLM implementation and prompt engineering",
-    context: "The goal of this project was to apply, analyze, and compare Large Language Models. We were looking specifically at the models' success when applied to academic topics and text. We looked at both Summarization and Text Generation Models. This project was done in partnership with Nathanial Jewel."
+    text: "Large Language Model (LLM) Implementation and Prompt Engineering",
+    context: "In this project, I applied and analyzed various Large Language Models (LLMs), focusing on their performance in academic contexts. The study included models for text summarization and text generation. This project was a collaboration with Nathanial Jewel."
+  },
+  {
+    link: 'https://github.com/marinarosenwald/RoamRaveApplication',
+    src: swiftIcon,
+    alt: "swiftIcon",
+    text: "RoamRave: Mobile Application for Activity Suggestions",
+    context: "RoamRave is a mobile application that suggests activities in the Seattle area. I developed the Swift application, while my project partner translated the code into React Native for cross-platform compatibility. The Swift code can be found <a href='https://github.com/marinarosenwald/RoamRaveApplication/tree/main/SwiftAppUI/RoamRave' style='color: rgb(194, 125, 15);'>here</a>."
   },
   {
     link: 'https://github.com/marinarosenwald/personalWebsite',
     src: web,
     alt: "webIcon",
-    text: "Code for this Website - React, JavaScript, CSS",
-    context: "This webite was developed using ReactJS. This is a link to the JavaScript protion of the website. Please note that some of the content of this website was left off of GitHub for privacy reasons."
+    text: "Code for Personal Website - React, JavaScript, CSS",
+    context: "This website was developed using ReactJS. The linked repository contains the JavaScript portion of the website's code. Note that certain content has been excluded for privacy reasons."
   },
   {
     link: 'https://marinarosenwald.github.io/CSS551FinalWebGL/',
     src: snowman,
     alt: "snowmanIcon",
-    text: "snowman game (main focus: 3D graphics)",
-    context: "This game was developed as a partner final project for Advanced 3D Graphics. The code for this game is available upon request."
-
+    text: "Snowman Game (Focus: 3D Graphics)",
+    context: "This 3D game was developed as part of a partner project for the Advanced 3D Graphics course. The project showcases the use of WebGL for creating interactive 3D graphics. The game code is available upon request."
   },
   {
     link: 'https://github.com/marinarosenwald/PythonWordle',
     src: wordle,
     alt: "wordleIcon",
-    text: "Recreating Wordle - Python",
-    context: "This was a fun project that I did in an evening because my mom was disappointed that she could only play one word a day in wordle."
-  },
+    text: "Wordle Recreation in Python",
+    context: "This project is a personal recreation of the popular word game 'Wordle,' built using Python. I developed it after realizing my mother could only play one word per day and wanted to expand the experience."
+  }
+
   //   {
   //     link: 'https://github.com/marinarosenwald/interviewPrep', 
   //     src: python,
@@ -88,7 +96,7 @@ function Code() {
       <br></br>
       <div id="ousideBox">
         <Box class="boxH" id="disclaimer">
-          <h1 style={{ color: 'rgb(194, 125, 15)', }}>Code</h1>
+          <h1 style={{ color: 'rgb(194, 125, 15)', textAlign: 'center' }}>Code</h1>
           <p style={{margin: 8, fontSize: '1.4rem', }}>Please note that some repos may be private. Contact me @marinarosenwald@gmail.com for access.</p>
         </Box>
       </div>
