@@ -384,7 +384,7 @@ function PersonalBlog() {
       <br></br>
       <div>
         {imagesList.map((image) => (
-          <img src={image.src} alt={image.alt} class="photo" />
+          <img src={image.src} alt={image.alt} class="photo" loading="lazy"/>
         ))}
       </div>
 
