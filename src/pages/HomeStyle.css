@@ -1,46 +1,85 @@
-#Home{
-  margin-bottom: 20px; 
-}  
+#Home {
+  margin-bottom: 20px;
+}
+
 .boxH {
-    display: block;
-    margin: auto; 
-    background-color: rgb(230, 230, 230);
-    border-radius: 25px;
-    width: 55%;
-    color: #000;
-    padding: 10;
-    border: 3px solid black; 
-    }
+  display: block;
+  margin: auto;
+  background-color: rgb(230, 230, 230);
+  border-radius: 25px;
+  width: 55%;
+  color: #000;
+  padding: 10px; /* Added px for proper padding */
+  border: 3px solid black;
+}
 
 .center {
   text-align: center;
 }
 
-  #contact h2{
-      text-align: center;
-      list-style: none;
-      padding: 8px 8px 8px 8px;
-      position: relative;
-      font-size: 2rem;
-  }
+#contact h2 {
+  text-align: center;
+  list-style: none;
+  padding: 8px;
+  position: relative;
+  font-size: 2rem;
+}
 
+.profileImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  width: 25%;
+  border: 3px solid #000;
+}
 
+#photo {
+  padding-top: 10px;
+}
 
+@media screen and (max-width: 769px) {
   .profileImg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 100%;
-    width: 25%;
-    border: 3px solid #000;
+    width: 45%;
   }
+}
 
-  #photo {
-    padding-top: 10px;
-  }
+/* Flexbox for uniform column sizes */
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch; /* Ensure columns stretch to the same height */
+}
 
-  @media screen and (max-width:769px){
-    .profileImg {
-      width: 45%;
-    }
-  }
+.column {
+  flex: 1; /* Make each column take up equal space */
+  max-width: 30%; /* Set equal width for each column */
+  display: flex;
+  justify-content: center;
+}
+
+.boxList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.DinsideBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Ensure text is centered */
+}
+
+.Dicon {
+  width: 60px; /* Adjust as needed */
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.DinsideText {
+  text-align: center; /* Ensure all text is centered */
+}

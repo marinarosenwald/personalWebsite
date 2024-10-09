@@ -28,20 +28,12 @@ const codeList = [
     context: "In these projects you will see the application of linear modeling, Naïve Bayes, logistic regression, random forest, AdaBoost, gradient boost, decision trees, and various clustering algorithms. These assignments also include the data cleaning steps and a clear written examples of my thought process throughout the assignments."
   },
   {
-    link: 'https://marinarosenwald.github.io/CSS551FinalWebGL/',
-    src: snowman,
-    alt: "snowmanIcon",
-    text: "snowman game (main focus: 3D graphics)",
-    context: "This game was developed as a partner final project for Advanced 3D Graphics. The code for this game is available upon request."
-
-  },
-  {
     link: 'https://github.com/marinarosenwald/CSS583_KMS_Project',
     src: python,
     alt: "pythonIcon",
     text: "Custom dictionary web-application with microservices and LLM integration",
-    context: "This project was created as a group final project for CSS583 - Knowledge management Systems. The goal of this project was to create a website that implemented both a MongoDB database search and a __ LLM to give the user a definition on organization specific language. Find our final paper about this project here: ___"
-  },
+    context: `This project was created as a group final project for CSS583 - Knowledge management Systems. The goal of this project was to create a website that implemented both a MongoDB database search and a Llama LLM to give the user a definition on organization-specific language. Find our final paper about this project <a href="https://github.com/marinarosenwald/CSS583_KMS_Project/blob/main/CSS%20583_TeamFinalWriteup.pdf" style="color: rgb(194, 125, 15);">here.</a>`
+  },  
   {
     link: 'https://github.com/marinarosenwald/CSS583_KMS_LLMs',
     src: python,
@@ -55,6 +47,14 @@ const codeList = [
     alt: "webIcon",
     text: "Code for this Website - React, JavaScript, CSS",
     context: "This webite was developed using ReactJS. This is a link to the JavaScript protion of the website. Please note that some of the content of this website was left off of GitHub for privacy reasons."
+  },
+  {
+    link: 'https://marinarosenwald.github.io/CSS551FinalWebGL/',
+    src: snowman,
+    alt: "snowmanIcon",
+    text: "snowman game (main focus: 3D graphics)",
+    context: "This game was developed as a partner final project for Advanced 3D Graphics. The code for this game is available upon request."
+
   },
   {
     link: 'https://github.com/marinarosenwald/PythonWordle',
@@ -87,9 +87,9 @@ function Code() {
     <div id='Code'>
       <br></br>
       <div id="ousideBox">
-        <Box class="box" id="disclaimer">
+        <Box class="boxH" id="disclaimer">
           <h1 style={{ color: 'rgb(194, 125, 15)', }}>Code</h1>
-          <p>Please note that some repos may be private. Contact me @marinarosenwald@gmail.com for access.</p>
+          <p style={{margin: 8, fontSize: '1.4rem', }}>Please note that some repos may be private. Contact me @marinarosenwald@gmail.com for access.</p>
         </Box>
       </div>
       <br></br>
@@ -97,24 +97,20 @@ function Code() {
       {rows.map((row, rowIndex) => (
         <div class="row" key={rowIndex}>
           {row.map((code, columnIndex) => (
-            // <div class="column" key={columnIndex}> 
-              <Box class="boxList">
-                <div class='DinsideBox'>
-
+            <Box className="boxList" style={{ maxWidth: '33%' }} key={`${rowIndex}-${columnIndex}`}>
+              <div class='DinsideBox'>
+                <a href={code.link}>
+                  <img src={code.src} alt={code.alt} class="Dicon"></img>
+                </a>
+                <div class="DinsideText">
                   <a href={code.link}>
-                    <img src={code.src} alt={code.alt} class="Dicon"></img>
+                    <p style={{ color: 'rgb(194, 125, 15)', }}>{code.text}</p>
                   </a>
-                  <div class="DinsideText">
-                    <a href={code.link}>
-                      <p style={{ color: 'rgb(194, 125, 15)', }}>{code.text}</p>
-                    </a>
-                    <br></br>
-                    <p>{code.context}</p>
-                  </div>
-
+                  <br></br>
+                  <p dangerouslySetInnerHTML={{ __html: code.context }}></p>
                 </div>
-              </Box>
-            // </div>
+              </div>
+            </Box>
           ))}
         </div>
       ))}

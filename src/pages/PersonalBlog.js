@@ -376,10 +376,10 @@ function Box({ children, ...props }) {
 function PersonalBlog() {
   return (
     <div id="PersonalBlog">
-      <Box class="box" id="disclaimer">
+      <Box class="boxH" id="disclaimer">
         <h1 style={{ color: 'rgb(194, 125, 15)', }}>Personal Blog</h1>
-        <p>Below are some photo highlights of my trips since March of 2023</p>
-        <p>Places include: Spain, Italy, Menorca, San Francisco, Santa Barbra, SLO, Los Angeles, Lake Alice, Snoqualmie Pass, Spokane, Red Buffs, Newport OR, Luisville CO, Seattle</p>
+        <p style={{margin: 8, fontSize: '1.4rem', }}>Below are some photo highlights of my trips since March of 2023</p>
+        <p style={{margin: 8, fontSize: '1.4rem', }}>Places include: Spain, Italy, Menorca, San Francisco, Santa Barbra, SLO, Los Angeles, Lake Alice, Snoqualmie Pass, Spokane, Red Buffs, Newport OR, Luisville CO, Seattle</p>
       </Box>
       <br></br>
       <div>
