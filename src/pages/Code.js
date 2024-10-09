@@ -93,28 +93,31 @@ function Code() {
 
   return (
     <div id='Code'>
-      <br></br>
+      <br />
       <div id="ousideBox">
         <Box class="boxH" id="disclaimer">
           <h1 style={{ color: 'rgb(194, 125, 15)', textAlign: 'center' }}>Code</h1>
-          <p style={{margin: 8, fontSize: '1.4rem', }}>Please note that some repos may be private. Contact me @marinarosenwald@gmail.com for access.</p>
+          <p style={{margin: 8, fontSize: '1.4rem'}}>Please note that some repos may be private. Contact me @marinarosenwald@gmail.com for access.</p>
         </Box>
       </div>
-      <br></br>
+      <br />
 
       {rows.map((row, rowIndex) => (
-        <div class="row" key={rowIndex}>
+        <div className="row" key={rowIndex}>
           {row.map((code, columnIndex) => (
-            <Box className="boxList" style={{ maxWidth: '33%' }} key={`${rowIndex}-${columnIndex}`}>
-              <div class='DinsideBox'>
+            <Box
+              className="boxListCode"
+              key={`${rowIndex}-${columnIndex}`}
+            >
+              <div className="DinsideBox">
                 <a href={code.link}>
-                  <img src={code.src} alt={code.alt} class="Dicon"></img>
+                  <img src={code.src} alt={code.alt} className="Dicon" />
                 </a>
-                <div class="DinsideText">
+                <div className="DinsideText">
                   <a href={code.link}>
-                    <p style={{ color: 'rgb(194, 125, 15)', }}>{code.text}</p>
+                    <p style={{ color: 'rgb(194, 125, 15)' }}>{code.text}</p>
                   </a>
-                  <br></br>
+                  <br />
                   <p dangerouslySetInnerHTML={{ __html: code.context }}></p>
                 </div>
               </div>
