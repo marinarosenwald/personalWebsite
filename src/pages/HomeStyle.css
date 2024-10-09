@@ -9,7 +9,7 @@
   border-radius: 25px;
   width: 55%;
   color: #000;
-  padding: 10px; /* Added px for proper padding */
+  padding: 10px; 
   border: 3px solid black;
 }
 
@@ -44,16 +44,15 @@
   }
 }
 
-/* Flexbox for uniform column sizes */
 .row {
   display: flex;
   justify-content: space-around;
-  align-items: stretch; /* Ensure columns stretch to the same height */
+  align-items: stretch; 
 }
 
 .column {
-  flex: 1; /* Make each column take up equal space */
-  max-width: 30%; /* Set equal width for each column */
+  flex: 1; 
+  max-width: 30%; 
   display: flex;
   justify-content: center;
 }
@@ -71,15 +70,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center; /* Ensure text is centered */
+  text-align: center; 
 }
 
 .Dicon {
-  width: 60px; /* Adjust as needed */
+  width: 60px; 
   height: 60px;
   margin-bottom: 10px;
 }
 
 .DinsideText {
-  text-align: center; /* Ensure all text is centered */
+  text-align: center; 
 }

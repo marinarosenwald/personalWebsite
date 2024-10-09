@@ -2,15 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 5%;  /* Reduced margins */
-    margin-right: 5%; /* Reduced margins */
+    margin-left: 5%;  
+    margin-right: 5%; 
 }
 
 .column {
-    flex: 1;  /* Ensures that columns take up equal space */
-    max-width: 30%;  /* Adjust to span approximately 30% of the row */
-    padding: 10px;  /* Adequate padding around columns */
-    box-sizing: border-box; /* Ensure padding doesn’t affect total width */
+    flex: 1;  
+    max-width: 30%;  
+    padding: 10px;  
+    box-sizing: border-box; 
 }
 
 .boxList {
@@ -24,7 +24,7 @@
     max-width: 100%; 
     color: #000;
     border: 5px solid black;
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
+    box-sizing: border-box;
 }
 
 .DinsideBox {
