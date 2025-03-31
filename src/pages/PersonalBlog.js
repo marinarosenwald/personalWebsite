@@ -51,8 +51,12 @@ import la3 from "../photos/Travel/la3.jpeg";
 import lake from "../photos/Travel/lake.jpeg";
 // import lake1 from "../photos/Travel/lake1.JPG";
 import lake2 from "../photos/Travel/lake2.jpeg";
+import leavensworth from "../photos/Travel/leavensworth.jpeg";
+import leavensworth1 from "../photos/Travel/leavensworth1.jpeg";
+import ofa from "../photos/Travel/OFA.jpeg";
 import si from "../photos/Travel/si.jpeg";
 import stevens from "../photos/Travel/stevens.jpeg";
+import stevens1 from "../photos/Travel/stevens1.jpeg";
 import spokane from "../photos/Travel/spokane.jpeg";
 import spokane1 from "../photos/Travel/spokane1.jpeg";
 import spokane2 from "../photos/Travel/spokane2.jpeg";
@@ -60,21 +64,43 @@ import spokane3 from "../photos/Travel/spokane3.jpeg";
 import newport from "../photos/Travel/newport.jpeg";
 import newport1 from "../photos/Travel/newport1.jpeg";
 import redbuff from "../photos/Travel/redbuff.jpeg";
+import redmond from "../photos/Travel/redmond.jpeg";
 import bellevue from "../photos/Travel/bellevue.jpeg";
 import colorado from "../photos/Travel/colorado.jpeg";
 import seattle from "../photos/Travel/seattle.jpeg";
+import seattle1 from "../photos/Travel/seattle1.jpeg";
 import portland from "../photos/Travel/portland.jpeg";
 
 const imagesList = [
   {
-    id: grad,
-    src: grad,
-    alt: "grad",
+    id: seattle1,
+    src: seattle1,
+    alt: "seattle1",
   },
   {
-    id: grad1,
-    src: grad1,
-    alt: "grad1",
+    id: redmond,
+    src: redmond,
+    alt: "redmond",
+  },
+  {
+    id: stevens1,
+    src: stevens1,
+    alt: "stevens1",
+  },
+  {
+    id: leavensworth,
+    src: leavensworth,
+    alt: "leavensworth",
+  },
+  {
+    id: leavensworth1,
+    src: leavensworth1,
+    alt: "leavensworth1",
+  },
+  {
+    id: ofa,
+    src: ofa,
+    alt: "ofa",
   },
   {
     id: colorado,
@@ -302,6 +328,16 @@ const imagesList = [
     alt: "slo5",
   },
   {
+    id: grad,
+    src: grad,
+    alt: "grad",
+  },
+  {
+    id: grad1,
+    src: grad1,
+    alt: "grad1",
+  },
+  {
     id: la,
     src: la,
     alt: "la",
@@ -370,29 +406,40 @@ const imagesList = [
 ];
 
 function Box({ children, ...props }) {
-  return <div {...props}>{children}</div>
+  return (
+    <div className="box" {...props}>
+      {children}
+    </div>
+  );
 }
 
 function PersonalBlog() {
   return (
     <div id="PersonalBlog">
-      <Box class="boxH" id="disclaimer">
-        <h1 style={{ color: 'rgb(194, 125, 15)',textAlign: 'center' }}>Personal Blog</h1>
-        <p style={{margin: 8, fontSize: '1.4rem', }}>Below are some photo highlights of my trips since March of 2023</p>
-        <p style={{margin: 8, fontSize: '1.4rem', }}>Places include: Spain, Italy, Menorca, San Francisco, Santa Barbra, SLO, Los Angeles, Lake Alice, Snoqualmie Pass, Spokane, Red Buffs, Newport OR, Luisville CO, Seattle</p>
+      <Box className="boxH" id="header">
+        <h1>Travel Blog</h1>
+        <p>
+          A collection of moments from my travels and adventures around the world.
+        </p>
       </Box>
-      <br></br>
-      <div>
-        {imagesList.map((image) => (
-          <img src={image.src} alt={image.alt} class="photo" />
+
+      <div className="photo-grid">
+        {imagesList.map((image, index) => (
+          <Box key={index} className="photo-container">
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="photo"
+              loading="lazy"
+              decoding="async"
+              width="300"
+              height="300"
+            />
+          </Box>
         ))}
       </div>
-
-      <p style={{ textAlign: "center", fontSize: 25 }}>Copyright © Marina Rosenwald 2024</p>
-      <p style={{ textAlign: "center", fontSize: 25 }}>Please contact me for use of any photos email: marinarosenwald@gmail.com</p>
-
     </div>
-  )
+  );
 }
 
 export default PersonalBlog;
