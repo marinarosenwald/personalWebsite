@@ -2,7 +2,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #2C3E50;
+    background-color: #8C916C;
     padding: 20px 80px;
     box-shadow: 0 5px 15px (0,0,0,0.06);
 }
@@ -19,17 +19,16 @@ nav{
     position: relative;
 }
 
-
 #navbar li a{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
-    color: RGB(236, 240, 241);
+    color: #3C2F24;
     transition: 0.3s ease-in-out;
 }
 
 #navbar li a:hover{
-    color: #F39C12;
+    color: #2C2219;
 }
 
 #navbar li a:hover::after,
@@ -37,7 +36,7 @@ nav{
     content: ""; 
     width: 30%;
     height: 2px;
-    background: #F39C12; 
+    background: #2C2219; 
     position: absolute; 
     bottom: -4px; 
     left: 20px; 
@@ -47,7 +46,7 @@ nav{
     display: none;
 }
 #mobile i{
-    color: RGB(236, 240, 241)
+    color: #3C2F24;
 }
 
 @media screen and (max-width:769px){
@@ -61,7 +60,7 @@ nav{
         right: -300px; 
         width: 300px;
         height: 100vh; 
-        background-color: #2C3E50;
+        background-color: #8C916C;
         box-shadow: 0 40px 60px (0,0,0,0.1);
         padding: 40px 0 0 10px;
         z-index: 99999;
@@ -74,7 +73,7 @@ nav{
 
     #navbar li{
         margin-bottom: 25px;
-        color: RGB(236, 240, 241);
+        color: #3C2F24;
     }
 
     #mobile{

@@ -1,41 +1,190 @@
 #Code {
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 #outsideBox {
-    padding-top: 200px;
+    padding-top: 40px;
 }
 
-.box {
-    border: 3px solid #000000; 
-    background-color: rgb(230, 230, 230);
+/* Header Styles */
+#header {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem 0;
 }
 
-.boxListCode {
-    margin: 10px; 
-    background-color: rgb(230, 230, 230);
-    border: 3px solid #000000;  
+#header h1 {
+    color: #6B7B4F;
+    text-align: center;
+    font-size: 3.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
-a {
+
+#header p {
+    text-align: center;
+    font-size: 1.56rem;
+    color: #7B5B3F;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+/* Disclaimer Box */
+#disclaimer {
+    background-color: #E8E0D5;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+    width: 70%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(107, 123, 79, 0.2);
+    border: 2px solid #6B7B4F;
+}
+
+#disclaimer p {
+    font-size: 1.43rem;
+    color: #6B7B4F;
+    line-height: 1.5;
+    margin: 0;
+}
+
+#disclaimer a {
+    color: #7B5B3F;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#disclaimer a:hover {
+    color: #6B7B4F;
+}
+
+/* Project Row */
+.row {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Project Card */
+.boxList {
+    width: 30%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(107, 123, 79, 0.2);
+    border: 2px solid #6B7B4F;
+    border-radius: 12px;
+    padding: 1.8rem;
+    cursor: pointer;
+    background-color: #E8E0D5;
+}
+
+.boxList:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(107, 123, 79, 0.3);
+    background-color: #E5DCD0;
+    border-color: #7B5B3F;
+}
+
+/* Project Content Layout */
+.DinsideBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.8rem;
+    gap: 1.2rem;
+}
+
+/* Project Icon */
+.Dicon {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(107, 123, 79, 0.2);
+    border: 1px solid #6B7B4F;
+    background-color: #F5F0E8;
+}
+
+.Dicon:hover {
+    transform: scale(1.05);
+    border-color: #7B5B3F;
+}
+
+/* Project Title */
+.project-title {
+    color: #6B7B4F;
+    margin-bottom: 0.4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.3;
+    transition: color 0.3s ease;
     text-decoration: none;
 }
 
-a:hover, a:focus {
-    text-decoration: underline;
-    color: rgb(194, 125, 15);
+.project-title:hover {
+    color: #7B5B3F;
 }
+
+/* Category Tags */
+.category-tags {
+    margin-bottom: 0.6rem;
+}
+
+.category-tag {
+    background-color: #6B7B4F;
+    color: #F5F0E8;
+    padding: 0.4rem 1rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    margin-right: 0.6rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(107, 123, 79, 0.2);
+    border: 1px solid #7B5B3F;
+    transition: all 0.3s ease;
+}
+
+.category-tag:hover {
+    background-color: #7B5B3F;
+    transform: translateY(-2px);
+    border-color: #6B7B4F;
+}
+
+/* Project Description */
+.DinsideText p {
+    color: #7B5B3F;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* Project Links */
+.project-header a {
+    text-decoration: none;
+}
+
+/* Responsive Design */
 @media screen and (max-width: 769px) {
     .boxList {
-        width: 70%; 
+        width: 90%;
     }
 
-    .box {
-        display: block;
-        margin: auto;
-        background-color: rgb(230, 230, 230);
-        border-radius: 25px;
-        width: 70%;
-        color: #000;
-        border: 5px solid black; 
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header, #disclaimer {
+        width: 90%;
     }
 }
